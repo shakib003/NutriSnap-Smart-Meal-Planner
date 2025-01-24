@@ -6,7 +6,7 @@ import Sidebar from "@/components/Sidebar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Sidebar Layout Example",
+  title: "Cal-Agent",
   description: "A page with a sidebar and dynamic content",
 }
 
