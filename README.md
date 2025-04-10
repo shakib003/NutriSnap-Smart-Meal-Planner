@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🥗 NutriSnap: Smart Meal Planner
 
-## Getting Started
+NutriSnap is a smart AI-powered web application that lets users take/upload photos of their fridge contents and generates personalized meal plans based on fitness goals and available ingredients.
 
-First, run the development server:
+## 📸 Core Workflow
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **User uploads/takes a photo** (camera or file upload).
+2. **Metadata (e.g., QR, timeline info)** is extracted and sent to a **NATS queue**.
+3. A **Python-based multimodal inspector** analyzes the image.
+4. Image is stored in **AWS S3**.
+5. Metadata and user data stored in **PostgreSQL**.
+6. **Frontend (Next.js)** handles interactions and displays AI-suggested meal plans via a **chatbot assistant**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧠 Backend
+- **FastAPI** – REST API backend
+- **NATS** – For async processing tasks
+- **AWS S3** – Image storage
+- **PostgreSQL** – User/meal plan data storage
+- *(Multimodal AI inspector module planned)*
 
-## Learn More
+### 🎨 Frontend
+- **Next.js (TypeScript)** – Main web app framework
+- **ShadCN UI** *(with possible Mantine fallback)* – Beautiful UI components
+- **AI Chatbot Assistant** – Smart interaction layer
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✅ Current Progress
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ✅ Git repo initialized
+- ✅ Next.js project setup with ShadCN UI
+- ✅ File upload and camera access components
+- 🛠️ FastAPI REST API setup (in progress)
+- ⏳ NATS integration, multimodal inspector (upcoming)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Folder Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
