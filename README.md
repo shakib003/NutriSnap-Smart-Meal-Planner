@@ -1,4 +1,4 @@
-# 🥗 NutriSnap: Smart Meal Planner  
+# 🥗 NutriSnap: Smart Meal Planner  (*In Progress*)
 
 > 🚧 **This project is currently in development. Expect rapid changes and updates.**
 
