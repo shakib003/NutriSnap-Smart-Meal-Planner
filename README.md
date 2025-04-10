@@ -1,4 +1,7 @@
-# 🥗 NutriSnap: Smart Meal Planner
+# 🥗 NutriSnap: Smart Meal Planner  
+![Status](https://img.shields.io/badge/status-in%20progress-orange)  
+
+> 🚧 **This project is currently in development. Expect rapid changes and updates.**
 
 NutriSnap is a smart AI-powered web application that lets users take/upload photos of their fridge contents and generates personalized meal plans based on fitness goals and available ingredients.
 
@@ -36,8 +39,3 @@ NutriSnap is a smart AI-powered web application that lets users take/upload phot
 - ✅ File upload and camera access components
 - 🛠️ FastAPI REST API setup (in progress)
 - ⏳ NATS integration, multimodal inspector (upcoming)
-
----
-
-## 📦 Folder Structure
-
