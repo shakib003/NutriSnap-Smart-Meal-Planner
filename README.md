@@ -1,5 +1,4 @@
 # 🥗 NutriSnap: Smart Meal Planner  
-![Status](https://img.shields.io/badge/status-in%20progress-orange)  
 
 > 🚧 **This project is currently in development. Expect rapid changes and updates.**
 
