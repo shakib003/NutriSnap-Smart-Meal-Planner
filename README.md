@@ -22,7 +22,6 @@ NutriSnap is a smart AI-powered web application that lets users take/upload phot
 - **NATS** – For async processing tasks
 - **AWS S3** – Image storage
 - **PostgreSQL** – User/meal plan data storage
-- *(Multimodal AI inspector module planned)*
 
 ### 🎨 Frontend
 - **Next.js (TypeScript)** – Main web app framework
